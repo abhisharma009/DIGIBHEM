@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>My Shopping Website</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+ <style>
+    a{
+      color: white;
+    }
+  body{
+      background-image: url("bg002.webp");
+           background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+           
+ }
+ #email{
+  text-align: center;
+  color: blanchedalmond;
+  font-family: sans-serif;
+  font-size: large;
+ }
+.avtar{
+  border-radius: 50%;
+}
+
+  </style>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  
+  </head>
+ 
+  
+
+<body>
+ <!-- COMPANY LOGO-->
+  <img src="logo1.jpg" width="100px" height="80px" alt="logo1"/>
+
+
+ <!--NAVIGATION BAR--> 
+  <div>
+    
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <input type="text" placeholder="Search..">
+    </div>
+     <nav>
+
+      <a  href="#">Home </a>||
+      <a href="About us.html">About us </a>||
+      <a href="#">Categories </a>||
+      <a href="#">Login</a>
+      
+    </nav>
+    
+  </div>
+ <!--PROMOTION OFFERS-->
+  <marquee>
+    
+<img src="fipromo.avif" width="250px" height="100px" />
+<img src="promo2.png" width="250px" height="100px"/>
+<img src="promo3.png" width="250px" height="100px" />
+
+</marquee>
+<!--TAG LINE WEBSITE-->
+ <marquee><h2 style="color: aqua;">Gives Better than Others</h2></marquee>
+  <h1 style="color: aqua;">Welcome to our Shopping Website.</h1>
+  <h2 style="color: aqua;">SHOP WITH US AND SAVES MONEY.</h2>
+    
+      <figure>
+    <!--PRODUCT LINK-->
+        <div class="row">
+          <div class="column">
+         <a href="https://www.ajio.com/women-sarees/c/830303008"> <img src="saree.jpg" alt="Saree" style="width: 250px; height: 150px;" ></a>
+             <figcaption> <b>Womens wear</b>
+              
+              </figcaption>
+
+          </div>
+          <div class="column">
+          <a href="https://www.ajio.com/men-tshirts/c/830216014"><img src="tshirt02.jfif" alt="tshirt" style="width:250px; height:150px;"></a>
+            <figcaption><b>Mens wear</b>
+              </figcaption>
+          </div>
+          <div class="column">
+          <a href="http://www.ajio.com/shop/kids"><img src="kids wear.png" alt="kurta" style="width:250px; height:150px;"></a>
+            <figcaption><b>Kids wear</b>
+              </figcaption>
+          </div>
+        </div>
+        <<!-- Slideshow container -->
+<div class="slideshow-container">
+<h3>Customer Testimonials</h3>
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>I love shopping from reesho and I am satisfied from their service</q>
+    <p class="author">- X pesron</p>
+  </div>
+
+  <div class="mySlides">
+    <q>The reesho change my view on online shopping and I am very happy from their customer support.</q>
+    <p class="author">- Y person</p>
+  </div>
+
+  <div class="mySlides">
+    <q>They always gives a festival discount and speciapl discount for membership customers.</q>
+    <p class="author">- Z person</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<br>
+             
+
+
+
+<!--CONTACT US-->
+         <footer>
+          Contact us : 9875595667,9875595668<br>
+       Customer Care : 1800-2467-2356<br>
+       <a id="email" href="https://mail.google.com/">reeshosupport@gmail.com</a><br>
+      <p> © 2023 All rights reserved to the company.</p>
+    
+         </footer>
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+         <a href="#" class="fa fa-google"></a>
+         <a href="#" class="fa fa-instagram"></a>
+</body>
+</html>
